@@ -223,12 +223,14 @@ nav li  {
     margin-top: 0px;
     background-color: #252529;
 }
-
+.ent-section{
+    padding-top:160px;
+}
 .ent-section h3{
     font-family: 'PT Sans', sans-serif;
     font-size: 2.0rem;
     font-weight: bold;
-    padding-top:100px;
+    
     color:#fff;
     text-align: center;
 }

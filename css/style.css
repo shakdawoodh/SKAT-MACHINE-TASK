@@ -1,6 +1,7 @@
 
 /* ==============NAV-BAR=========  */
- .nav {
+ nav {
+     height:40px;
     background-color: #333;
 }
 .nav a{
@@ -8,6 +9,30 @@
     color:rgb(231, 229, 229);
     font-weight:500;
 }
+
+.showcase-section .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.showcase-section .navbar{
+    padding:0px 15px;
+}
+.showcase-section .navbar-toggler{
+    padding:0px;
+}
+.showcase-section .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height:1.2em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    border: none;
+}
+nav li:hover {
+    background-color: #444;
+    height:fit-content;
+  }
 /* ===========SHOWCASE=========== */
 .showcase-section{
     margin:0;
@@ -280,4 +305,10 @@ footer .footer-bottom-copyrights{
       display: block;
       margin-bottom: 20px;
     }
+}
+@media screen and (max-width: 780px) {
+    .column-1 .card-1,.column-2 .card-2,.column-3 .card-3,.column-4 .card-4{
+     display: none;
+    }
+     
 }

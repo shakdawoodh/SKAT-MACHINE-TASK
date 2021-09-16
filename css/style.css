@@ -307,7 +307,7 @@ footer .footer-bottom-copyrights{
     }
 }
 @media screen and (max-width: 780px) {
-    .column-1 .card-1,.column-2 .card-2,.column-3 .card-3,.column-4 .card-4{
+    .footer{
      display: none;
     }
      

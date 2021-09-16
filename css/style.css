@@ -1,8 +1,11 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 
 /* ==============NAV-BAR=========  */
- nav {
+nav {
      height:40px;
-    background-color: #333;
+     background-color: #333;
 }
 nav a{
     
@@ -14,7 +17,7 @@ nav a{
     color: #fff;
 }
 .showcase-section .navbar{
-    padding:0px 15px;
+    padding:0px 0px;
 }
 .showcase-section .navbar-toggler{
     padding:0px;
@@ -31,22 +34,28 @@ nav a{
 }
 nav li:hover {
     background-color: #444;
-    height:50px;
+    height:55px;
   } 
 nav li  {
-   padding:10px;
+   padding:10px 15px;
   }
+.showcase-section .navbar .navbar-brand {
+    font-size:16px;
+    padding-left:15px;
+    
+}
 /* ===========SHOWCASE=========== */
 .showcase-section{
     margin:0;
     padding: 0;
     width: 100%;
-    height:fit-content;
+    height:100vh;
     background:url("../images/showcase.jpeg") no-repeat center/cover;
 }
-
+.showcase-section .main{
+    padding-top: 25vh;
+}
 .showcase-section .main h1{
-    padding-top:180px;
     color: #fff;
     font-weight: bold;
     font-family: 'PT Sans', sans-serif;
@@ -55,8 +64,8 @@ nav li  {
     margin-bottom: 0;
 }
 .showcase-section .main h2{
-    margin-top:50px;
-    padding-bottom:40px;
+    margin-top:30px;
+    margin-bottom: 30px;
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     color: #fff;
@@ -71,8 +80,15 @@ nav li  {
     font-size: 1.3rem;
 }
 
+@media screen and (max-height: 580px){
+ #main p.lead {
+    display: none;
+   }
+}
+
 /* ===========MUSIC-SECTION============ */
 .music-section{
+    padding-top:32px;
     margin-top: 0px;
     background-color: #252529;
     padding-bottom: 50px;
@@ -81,7 +97,6 @@ nav li  {
     font-family: 'PT Sans', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
-    padding-top:80px;
     color:#fff;
 }
 .music-section h3{
@@ -108,22 +123,35 @@ nav li  {
     padding: 15px 12px;
     background-color:#b90415;
 }
+.music-section button:hover{
+
+    background-color:#d3071b;;
+}
 .music-section button a{
     color:#fff;
     text-decoration: none;
 
 }
+.music-section .music-container .container{
+    max-width: 1280px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+    
+}
 .music-section .small-text{
     font-family: 'PT Sans', sans-serif;
     color:#fff;
     font-size: 1rem;
-    
-
 }
 .music-section img{
+    max-width: 1320px;
     content: center;
+    padding:0px;
     width:100%;
 }
+
+
 /* ===========VIDEO-SECTION=========== */
 .video-section{
     padding-bottom: 50px;
@@ -171,11 +199,23 @@ nav li  {
     color:#fff;
     font-size: 1rem;
 }
+.video-section .video-container .container{
+    max-width: 1320px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+   
+}
 .video-section img{
-    content: center;
+    
     width:100%;
 }
-
+@media (min-width:1200px){
+    .video-section .video-container .container img{
+       
+        max-width:1200px;
+    }
+}
 /* ===========ENTERTAIMENT-SECTION========= */
 .ent-section{
     background: url("../images/section-bg.jpeg") no-repeat bottom/cover;
@@ -248,11 +288,24 @@ nav li  {
     color:#f33;
     text-align:left;
 }
-.card-section a{
-    
+.card-section i{
+    padding-right:5px;
     text-decoration: none;
     color:#103063;
     text-align:left;
+}
+.card-section a{
+   text-decoration: none;
+   color:#103063;
+    text-align:left;
+}
+.card-section a:hover{
+   text-decoration: none;
+   color:#103063;
+    text-align:left;
+}
+.card-section hr{
+    background-color: rgb(92, 92, 92);
 }
 @media screen and (max-width: 600px) {
     .column-img ,.column-text {
